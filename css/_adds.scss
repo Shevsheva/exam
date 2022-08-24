@@ -1,0 +1,97 @@
+:root {
+
+// fonts-sizes
+    --fs12: 12px;
+    --fs14: 14px;
+    --fs16: 16px;
+    --fs18: 18px;
+    --fs20: 20px;
+    --fs24: 24px;
+    --fs32: 32px;
+    --fs40: 40px;
+    --fs44: 44px;
+    --fs68: 68px;
+    
+
+// fonts-families
+    --font-first: 'Lato'sans-serif;
+    --font-second: 'Playfair_Display' sans-serif;
+
+// colors
+    --primary-font-color: #262A3F;
+    --green-font-color: #85BBB1;
+    --button-font-color: #F1897B;
+    --button-DT-color: #53F3CD;
+    --primary-darkth-color: white;
+    --blue-font-color: #689FF2;
+
+    --primary-color: white;
+    --primary-grey: #E4E4E4;
+
+// lines
+    --primary-line-height: 26px;
+    --heading-1-line-height: 72px;
+    --heading-2-line-height: 52px;
+    --heading-3-line-height: 48px;
+    --heading-4-line-height: 48px;
+    --heading-5-line-height: 20px;
+    --heading-6-line-height: 2;
+    --button-line-height: 20px;
+    --additional-line-height: 24px;
+
+// Adaptive
+    --phone-width: 375px;
+    --tablet-width: 768px;
+    --desktop-width: 1125px;
+    --desktopHR-width: 1440px;
+
+// padding
+    --padding-main: 0 135px;
+}
+
+// fonts-sizes
+$fs12: var(--fs12, 12px);
+$fs14: var(--fs14, 14px);
+$fs16: var(--fs16, 16px);
+$fs18: var(--fs18, 18px);
+$fs20: var(--fs20, 20px);
+$fs24: var(--fs24, 24px);
+$fs32: var(--fs32, 32px);
+$fs40: var(--fs40, 40px);
+$fs44: var(--fs44, 44px);
+$fs68: var(--fs68, 68px);
+
+// fonts-families
+$font-first: "Lato";
+$font-second: "Playfair_Display";
+
+// colors - fonts
+$primary-font-color: var(--primary-font-color, #262A3F);
+$green-font-color: var(--green-font-color, #85BBB1);
+$button-font-color: var(--button-font-color, #F1897B);
+$button-DT-color: var(--button-DT-color, #53F3CD);
+$primary-darkth-color: var(--primary-darkth-color, white);
+$blue-font-color: var(--blue-font-color, #689FF2);
+
+// colors - add
+$primary-color: var(--primary-color, white);
+$primary-grey: var(--primary-grey, #E4E4E4);
+
+// lines
+$primary-line-height: var(--primary-line-height, 26px);
+$heading-1-line-height: var(--heading-1-line-height, 72px);
+$heading-2-line-height: var(--heading-2-line-height, 52px);
+$heading-3-line-height: var(--heading-3-line-height, 48px);
+$heading-4-line-height: var(--heading-4-line-height, 48px);
+$heading-5-line-height: var(--heading-5-line-height, 20px);
+$heading-6-line-height: var(--heading-6-line-height, 2);
+$button-line-height: var(--button-line-height, 20px);
+$additional-line-height: var(--additional-line-height, 24px);
+
+// Adaptive
+$phone-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1125px;
+
+// padding
+$padding-main: var(--padding-main, 0 135px);

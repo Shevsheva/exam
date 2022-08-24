@@ -1,0 +1,60 @@
+.first__screen {
+    height: 78vh;
+    padding-top: 120px;
+    
+
+    h3, p {
+        max-width: 560px;
+    }
+
+    h3 {
+        margin-bottom: -55px;
+        font-weight: 400;
+        font-size: $fs44;
+        line-height: 52px;
+            @include phone {
+                    padding: 0;
+                    margin: 0;
+                }
+    }
+
+    p {
+        margin-bottom: 0px;
+        padding: 58px 50px 50px 0;
+        color: black;
+    }
+
+    @include tablet {
+        padding-top: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @include phone {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.dark .first__screen {
+    p {
+        color: white;
+    }
+}
+
+.peer__section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 65px 65px 0;
+}
+
+.btn {
+    @include btn;
+}
+
+.dark .btn {
+    @include dark-btn;
+}

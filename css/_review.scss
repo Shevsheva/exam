@@ -1,0 +1,136 @@
+.section__review-heading {
+
+    h4 {
+        padding: 0px 10px 0px 71px;
+        margin: 0;
+    }
+
+    p {
+        padding: 12px 10px 0px 71px;
+        color: black;
+    }
+}
+
+.dark .section__review-heading {
+    p {
+        color: white;
+    }
+}
+
+p {
+        color: white;
+}
+
+.section__review-clients {
+    height: 100px;
+    width: 25%;
+    margin: 1.5rem;
+    font-size: $fs16;
+    color: $primary-color;
+}
+
+.section__review {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 40px 130px;
+
+    @include phone {
+            font-size: $fs14;
+            display: block;
+            padding: 0 10px 10px 10px;
+            font-size: $fs12;
+
+        }
+
+    @include tablet {
+        display: block;
+        width: fit-content;
+    }
+}
+
+        .sign {
+            font-family: "Playfair Display", sans-serif;
+            font-style: italic;
+            font-size: $fs20;
+            line-height: $heading-5-line-height;
+            letter-spacing: 0.08em;
+            opacity: 0.8;
+            bottom: 48px;
+            color: $primary-color;
+            padding: 74px 34px 1px 0px;
+        }
+
+.fb1 {
+    background: url(../img/review1.png)no-repeat;
+    width: 370px;
+    height: 340px;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 20px 51px 32px 45px;
+
+
+    @include tablet {
+        width: 100%;
+        height: auto;
+        width: fit-content;
+        padding: 10px;
+        fontsize: $fs14;
+        padding: 10px 55% 10px 10px;
+    }
+
+    @include phone {
+        width: 100%;
+        height: auto;
+        font-size: $fs14;
+    }
+}
+.fb2 {
+    background: url(../img/review2.png)no-repeat;
+    width: 370px;
+    height: 340px;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 20px 51px 32px 45px;
+
+    @include tablet {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            fontsize: $fs14;
+            padding: 10px 55% 10px 10px;
+        }
+    
+        @include phone {
+            width: 100%;
+            height: auto;
+            fontsize: $fs14;
+        }
+}
+.fb3 {
+    background: url(../img/review3.png) no-repeat;
+    width: 370px;
+    height: 340px;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 20px 39px 32px 45px;
+
+    @include tablet {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            fontsize: $fs14;
+            padding: 10px 55% 10px 10px;
+        }
+    
+        @include phone {
+            width: 100%;
+            height: auto;
+            fontsize: $fs14;
+        }
+}

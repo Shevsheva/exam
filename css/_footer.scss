@@ -1,0 +1,156 @@
+.footer {
+    hr {
+        @include hr;
+        color: $primary-grey;
+        background-color: $primary-grey;
+    }
+}
+
+.dark .footer {
+    background-color: #161926;
+}
+
+.main__contacts {
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+
+    @include phone {
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    h4 {
+        margin: 22px 10px 10px 2px;
+    }
+
+    article,
+    form {
+        max-width: 500px;
+    }
+
+    p {
+        color: black;
+    }
+
+    article {
+        margin: 0 0 0 70px;
+        @include phone {
+            margin: 0 0 20px 0;
+        }
+    }
+}
+
+.dark .main__contacts {
+    p {
+        color: white;
+    }
+}
+
+
+.data {
+        width: 40%;
+        min-width: 320px;
+
+    @include phone {
+        width: 100%;
+    }
+
+    input {
+    width: 100%;
+    left: 0%;
+    right: 79.79%;
+    top: 0%;
+    bottom: 37.5%;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: white;
+    opacity: 0.5;
+    
+    &:placeholder {
+        position: absolute;
+            left: 0%;
+            right: 79.79%;
+            top: 0%;
+            bottom: 37.5%;
+            font-family: 'Playfair Display';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            /* identical to box height, or 111% */
+            letter-spacing: 0.08em;
+            /* Primary / Dark blue */
+            color: $primary-font-color;
+            opacity: 0.5;
+    }
+    }
+
+
+    hr {
+        color: $primary-color;
+        background-color: $primary-color;
+        opacity: 0.1;
+        margin-bottom: 30px;
+        @include phone {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.footer__end {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $fs14;
+    line-height: $additional-line-height;
+    letter-spacing: 0.8px;
+
+    @include phone {
+        justify-content: space-evenly;
+        height: 60px;
+    }
+
+    >span {
+        margin-right: 10px;
+        opacity: 0.6;
+    }
+
+    a {
+        margin-right: 10px;
+
+        @include phone {
+            display: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+        @include tablet {
+            display: none;
+        }
+    
+}
+
+.dark .footer__end {
+    color: $primary-darkth-color;
+}
+
+.made-by {
+    flex: 1;
+    text-align: center;
+
+    @include tablet {
+        text-align: right;
+    }
+
+    @include phone {
+        display: none;
+    }
+}

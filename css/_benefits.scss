@@ -1,0 +1,178 @@
+.benefits {
+    display: grid;
+    padding: 108px 30px 0px 100px;
+    padding-top: 120px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 20px;
+    margin-bottom: 10vh;
+    margin-top: -9px;
+
+    @include tablet {
+        padding: 20px 0 0;
+    }
+
+    @include phone {
+        grid-template-columns: 1fr;
+    }
+
+
+    @include desktop {
+        padding: 120px 30px 0 10px;
+    }
+
+}
+
+
+.quote__img {
+    padding: 40px 50px;
+
+                @include phone {
+                        width: 100%;
+                        height: auto;
+                    }
+
+}
+
+.benefits__item {
+    min-height: 300px;
+    max-width: 500px;
+    min-width: 320px;
+    padding: 5px 0 100px;
+
+    p {
+        padding: 0;
+        color: black;
+    }
+
+    @include tablet {
+        min-width: 200px;
+    }
+
+        @include phone {
+            font-size: $fs12;
+            padding: 5px 0 0 0;
+            min-height: 110px;
+        }
+
+    hr {
+        @include hr;
+        color: $primary-grey;
+        background-color: $primary-grey;
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        margin-bottom: 24px;
+        color: black;
+
+        @include tablet {
+            font-size: $fs24;
+            line-height: 1.5;
+        }
+
+        @include phone {
+            font-size: $fs12;
+        }
+    }
+}
+
+.dark .benefits__item {
+    p, h3 {
+        color: white;
+    }
+}
+
+.section__quote {
+    background: url(../img/quote-background.png) no-repeat center top;
+    background-size: auto;
+    color: $primary-color;
+    padding: 42px 147px;
+    margin-bottom: 50px;
+    position: relative;
+    margin: -32px 135px;
+
+    @include tablet {
+        padding: 10px;
+    }
+
+    @include desktop {
+        padding: 0;
+    }
+
+
+    .quote__img {
+        position: absolute;
+        left: 50px;
+        top: 29px;
+
+        @include tablet {
+            width: 50px;
+            left: 15px;
+            top: 10px;
+        }
+
+        @include phone {
+            display: none;
+        }
+    }
+}
+
+    .solis-quote {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 46px;
+        max-width: 750px;
+        margin-bottom: 40px;
+        opacity: 1;
+        letter-spacing: 0.4px;
+        padding: 20px 10px 0px 10px;
+        color: white;
+
+        @include tablet {
+            font-size: $fs12;
+            line-height: $primary-line-height;
+            margin-bottom: 10px;
+        }
+
+            @include desktop {
+                font-size: $fs12;
+                width:max-content
+            }
+
+            @include phone {
+                width: 100%;
+                height: auto;
+                font-size: $fs12;
+            }
+}
+
+
+
+    .signature {
+        font-family: $font-second, sans-serif;
+        font-style: italic;
+        font-size: $fs20;
+        line-height: $fs20;
+        letter-spacing: 1px;
+        color: aqua;
+        padding: 0;
+        margin: 0;
+
+        @include tablet {
+            font-size: $fs18;
+            line-height: $primary-line-height;
+            margin-bottom: 20px;
+        }
+
+                @include phone {
+                    font-size: $fs12;
+                }
+    }
+
+#img {
+                @include phone {
+                        width: 500px;
+                        height: auto;
+                    }
+}

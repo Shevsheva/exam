@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.main {
+    margin-top: -80px;
+
+    @include tablet {
+        margin-top: -60px;
+    }
+}
+// .dark .main {
+//     background-color: #161926;
+//     background-blend-mode: normal;
+// } 
+
+body {
+    margin: 0;
+    font-family: $font-first;
+    font-size: $fs18;
+    background: url(../img/white-theme-bg.png) no-repeat center top;
+    background-size: 100%;
+    height: 100%;
+    width: auto;
+    color: $primary-font-color;
+    // overflow: hidden;
+
+        @include tablet {
+            background-size: 700px 760px;
+            }
+        
+        @include phone {
+            background: none;
+            }
+}
+
+
+.dark body {
+        background: url(../img/Dark-theme/dark-theme-bg.png) no-repeat center top;
+        color: $primary-darkth-color;
+        background-size: 100%;
+        z-index: 5;
+        background-color: #161926;;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-second;
+    color: $primary-font-color;
+}
+
+.dark h1 {
+    color: $primary-color;
+}
+
+.dark h2 {
+    color: $primary-color;
+}
+
+.dark h3 {
+    color: $primary-color;
+}
+
+.dark h4 {
+    color: $primary-color;
+}
+
+.dark h5 {
+    color: $primary-color;
+}
+
+.dark h6 {
+    color: $primary-color;
+}
+
+
+
+h2 {
+    font-size: $fs68;
+
+    @include tablet {
+        font-size: $fs24;
+    }
+
+    @include phone {
+        padding: 0px 0 0 50px;
+    }
+}
+
+h3 {
+    font-size: $fs44;
+
+    @include tablet {
+        font-size: $fs24;
+    }
+
+        @include phone {
+            padding: 0px 0 0 50px;
+        }
+}
+
+h4 {
+        font-size: $fs40;
+
+    @include tablet {
+        font-size: $fs24;
+    }
+
+        @include phone {
+            padding: 0px 0 0 50px;
+        }
+}
+
+h5 {
+    font-size: $fs32;
+
+    @include tablet {
+        font-size: $fs24;
+    }
+
+        @include phone {
+            padding: 0px 0 0 50px;
+        }
+}
+
+h6 {
+    font-size: $fs24;
+
+    @include tablet {
+        font-size: $fs18;
+    }
+
+        @include phone {
+            padding: 0px 0 0 50px;
+        }
+}
+
+em {
+    font-style: italic;
+    color: $green-font-color;
+}
+
+.dark 
+em {
+    font-style: italic;
+    color: $blue-font-color;
+}
+
+p {
+    opacity: 80%;
+    font-weight: 300;
+    color: $primary-font-color;
+}
+
+.dark p {
+    color: white;
+}
+
+.wrapper {
+    margin: 0 64px;
+
+    @include tablet {
+        margin: 0 30px;
+    }
+
+    @include phone {
+        margin: 0 15px;
+    }
+}
+
+
+

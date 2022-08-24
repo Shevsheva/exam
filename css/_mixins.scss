@@ -1,0 +1,91 @@
+@mixin phone {
+    @media (max-width: $phone-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin btn {
+    color: $button-font-color;
+    font-size: $fs20;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+    background-color: rgba($color: $primary-grey, $alpha: 0);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: relative;
+    padding: 10px 20px 15px 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+    &::before {
+        height: 13px;
+        width: calc(100% - 40px);
+        position: absolute;
+        content: " ";
+        left: 25px;
+        top: 22px;
+        background-color: $button-font-color;
+        border: 1px solid;
+        opacity: 30%;
+    }
+}
+
+@mixin dark-btn {
+    color: $button-DT-color;
+    background-color: rgba($color: $button-DT-color, $alpha: 0);
+    border: 1px solid rgba(255, 255, 255, 0);
+
+    &::before {
+        background-color: $button-DT-color;
+    }
+}
+
+@mixin hover {
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 4px;
+    }
+}
+
+
+@mixin dollar {
+    &::before {
+        content: "$";
+        font-size: $fs68;
+        line-height: 1;
+        color: $primary-grey;
+
+        @include phone {
+            font-size: $fs20;
+        }
+    }
+}
+
+@mixin hr {
+    height: 1px;
+    border: none;
+    color: inherit;
+    background-color: inherit;
+    margin: 0;
+}
+
+@mixin cards-input {
+    border-radius: 4px;
+    color: $primary-color;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+}

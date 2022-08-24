@@ -1,0 +1,112 @@
+.promises__section {
+    background: url(../img/features-background-image.png) no-repeat left center;
+    background-size: 45% 75%;
+    background-position: 10% 40%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 100px 100px 0px 0px;
+
+    h5 {
+        padding: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    p {
+        padding: 0px;
+        margin: 0px;
+        color: black;
+    }
+
+    @include desktop {
+        background: none;
+    }
+
+}
+
+.dark .promises__section {
+    p {
+        color: white;
+    }
+}
+
+.promises__article {
+    max-width: 800px;
+    min-height: 70vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+
+    @include phone {
+        flex-direction: column;
+    }
+}
+
+.dark .promises__article {
+    background-color: rgba(22, 25, 38, 0.8);
+}
+
+.promises__article-list {
+
+    @include phone {
+        padding-bottom: 12px;
+    }
+
+    @include desktop {
+        padding: 25px;
+
+    }
+}
+
+.list {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+
+    @include phone {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    @include desktop {
+        justify-content: center;
+    }
+}
+
+.list__item {
+    h5 {
+        margin-bottom: 10px;
+
+        @include phone {
+            font-size: 32px;
+            line-height: 1.2;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+        line-height: $additional-line-height;
+
+        @include phone {
+            font-size: $fs14;
+            line-height: $additional-line-height;
+        }
+    }
+}
+
+.promises__article-list{
+    flex: 1;
+    padding: 115px 11px 225px 100px;
+
+    @include phone {
+        padding: 32px 12px;
+    }
+
+    p {
+        margin-bottom: 32px;
+
+    }
+}

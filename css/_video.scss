@@ -1,0 +1,88 @@
+    .responsive {
+        height: auto;
+        width: 100%;
+    }
+
+.video {
+    margin: 200px 0px 0px 171px;
+    max-width: 900px;
+    
+    @include phone {
+        margin: 0;
+    }
+
+        @include tablet {
+            margin: 50px 0;
+        }
+
+
+    p {
+        white-space: nowrap;
+        padding: 7px 0p;
+        color: black;
+
+        @include desktop {
+            display: block;
+            justify-content: center;
+            white-space: inherit;
+        }
+
+        @include tablet {
+                font-size: $fs14;
+            }
+
+        @include phone {
+            font-size: $fs14;
+            white-space: inherit;
+        }
+    }
+
+    h3 {
+        margin-left: 0;
+        margin-bottom: 20px;
+        max-width: 900px;
+
+        @include tablet{
+            font-size: $fs14;
+        }
+
+        @include phone {
+            line-height: 1.5;
+        }
+    }
+}
+
+.dark .video {
+    p {
+        color: white;
+    }
+}
+
+.video__tablet{
+    position: relative;
+    margin-bottom: 55px;
+
+        @include tablet {
+                image-size: 700px 760px;
+            }
+        
+            @include phone {
+                background: none;
+            }
+}
+
+.play-icon {
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+}
+
+// .video {
+//     @include tablet {
+//         margin: 50px 0 0 0;
+//     }
+
+//     @include phone {
+//         margin: 50px 0 0 0;
+//     }
+// }
